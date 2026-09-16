@@ -244,3 +244,19 @@ input, constructs context, calls the service, displays output, and saves history
 Then describe one experiment and the evidence you used to interpret its result.
 
 Save your app changes and follow the course README and Canvas for submission instructions.
+
+One Complete Turn
+Reads Input: Captures user text via st.chat_input.
+
+Constructs Context: Combines the new text with saved chat history.
+
+Calls Service: Sends the full message list to the model API.
+
+Displays Output: Shows the returned answer on the screen.
+
+Saves History: Stores the new exchange in st.session_state for the next turn.
+
+Experiment: Changing the System Prompt
+What you did: You instructed the bot to act as a tutor ("Give one hint, then ask a question...").
+
+The evidence: In your chat app, when you asked to write a loop, it successfully withheld the answer, provided a hint about for loops, and asked a clarifying question. When you subsequently told it to "skip the hints," it provided the code, demonstrating that a direct user command can override the system prompt's baseline behavior.
